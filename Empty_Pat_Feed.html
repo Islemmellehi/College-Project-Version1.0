@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Empty_Pat_Feed_Style.css">
+    <link rel="icon" href="./Images/logo_circle.png">
+    <script src="code.js"></script>
+    <title>Nafs Feed</title>
+</head>
+<body>
+    <header>
+        <div id="fixed_header">
+            <figure id="logo">
+                <p><a id="1"></a></p>
+                <img src="./Images/logo.png" alt="logo" />
+            </figure>
+            <nav id="navbar">
+              <ul>
+                <li><a href="./Empty_Pat_Feed.html"><img src="./Images/Icons/feed.png" alt=""></a></li>
+                <li><a href="./Patient_Profile.html"><img src="./Images/Icons/pr.png"></a></li>
+                <li><a href="./Articles.html"><img src="./Images/Icons/Article.png"></a></li>
+              </ul>
+            </nav>
+            <a href="./Extern_Home.html"><img src="./Images/Icons/logout_icon.png" id="logout"></a>
+    </header>
+    <main>
+        <div class="user_post">
+            <img src="./Images/Icons/profile1.png">
+            <p><a>User</a></p>
+            <textarea name="post" id="post" cols="30" rows="100" placeholder="Post Something ..."></textarea>
+            <button onclick="post()">Post</button>
+        </div>
+        <p id="empty">You have no recent posts to see because you have no contacts</p>
+        
+        <div class="contacts" id="hidden_contact">
+            <h4 id="text">My Contacts</h4>
+            <h5 id="text1">My Friends</h5>
+            <div class="friend1">
+            <p id="text3">You currently have no friends</p>
+            </div>
+            
+            <h5 id="text6">My Psychiatrists</h5>
+            <div class="psychiatrist1">
+                <p id="text7">You currently have no psychiatrists</p>
+            </div>
+        </div>  
+        <div class="sidebar">
+            <button id="show" onclick="sidebar()">Show Profile</button>
+            <button id="hide" onclick="hidebar()">Hide Profile</button>
+
+        </div> 
+        
+        <div id="hiddenbar">
+            <h1 id="title2">Mr/Mme User</h1>
+            <img src="./Images/Icons/profile1.png" id="profile_pic">
+            <h2 id="title">User Area</h2>
+            <button id="consultation" onclick="Consultation()">
+                <img title="My consultations" src="./Images/Icons/webcam.png" id="webcam">
+                <p id="button_text">My consultations</p>
+            </button>
+            <p id="consultation_result"></p>
+            <button id="agenda" onclick="Agenda()">
+                <img title="My agenda" src="./Images/Icons/calendar.png" id="calendarr">
+                <p id="button_text2">My agenda</p>
+            </button>
+            <p id="agenda_result"></p>
+        </div>
+
+    </main>
+    <footer>
+        <div class="upperfooter">
+            <a href="./Extern_Home.html"><h3>Home</h3></a>
+            <a href="./Empty_Pat_Feed.html"><h3>Feed</h3></a>
+            <a href="./Articles.html"><h3>Articles</h3></a>
+            <a href="./Sign_Up_Pat.html"><h3>Sign up</h3></a>
+            <a href="./Sign_In_Pat.html"><h3>Sign In </h3></a>
+            <a href="./Patient_Profile.html"><h3>Profile </h3></a>
+        </div>
+        <img src="./Images/logo_circle.png" id="footlogo"> 
+        <p id="copyright">@copyright goes to Nafs Team</p>
+    </footer>
+</body>
+</html>

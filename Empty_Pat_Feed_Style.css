@@ -1,0 +1,347 @@
+@font-face {
+  src: url(./Fonts/English_French/Roboto.ttf);
+  font-family: Roboto;
+}
+@font-face {
+  src: url(./Fonts/English_French/Hina.ttf);
+  font-family: Hina;
+}
+@font-face {
+  src: url(./Fonts/English_French/Lora.ttf);
+  font-family: Lora;
+}
+@font-face {
+  src: url(./Fonts/English_French/Raleway.ttf);
+  font-family: Raleway;
+}
+@font-face {
+  src: url(./Fonts/English_French/Merianda.ttf);
+  font-family: Merianda;
+}
+@font-face {
+  src: url(./Fonts/English_French/Messiri.ttf);
+  font-family: Messiri;
+}
+
+body {
+  overflow-x: hidden;
+  height: 600px;
+  background-color: #d6d2d6;
+  margin-left: -0.1%;
+}
+
+header {
+  background-color: #31112c;
+  height: 65px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0px;
+  left: -10px;
+  border-radius: 10px;
+}
+
+#logo img {
+  border-radius: 100px;
+  width: 60px;
+  position: fixed;
+  top: 2px;
+  left: 50px;
+}
+#navbar ul {
+  list-style: none;
+  position: fixed;
+  top: -4px;
+  left: 340px;
+}
+#fixed_header {
+  position: fixed;
+}
+#logout {
+  width: 2%;
+  position: fixed;
+  left: 95%;
+}
+
+#navbar ul li {
+  display: inline;
+  padding: 80px;
+  color: white;
+  font-family: Messiri;
+  font-size: 22px;
+}
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+#navbar ul li img {
+  width: 45px;
+  height: 45px;
+}
+.user_post {
+  width: 800px;
+  height: 150px;
+  background-color: #ffff;
+  border: hidden;
+  border-radius: 10px;
+  margin-top: 8%;
+  margin-left: 20%;
+}
+.user_post img {
+  width: 5%;
+  border-radius: 50px;
+  margin-top: 10px;
+  margin-left: 35px;
+}
+.user_post p {
+  margin-left: 90px;
+  margin-top: -32px;
+  font-family: Roboto;
+  letter-spacing: 2px;
+}
+#post {
+  width: 600px;
+  height: 70px;
+  border-radius: 10px;
+  border: hidden;
+  margin-left: 11%;
+  margin-top: -5px;
+  font-family: Messiri;
+  letter-spacing: 2px;
+  resize: none;
+}
+.user_post button {
+  width: 80px;
+  height: 30px;
+  margin-left: 2%;
+  font-family: Messiri;
+  font-size: 18px;
+  background-color: #492444;
+  color: #ffff;
+  border: hidden;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.user_post button:hover {
+  background-color: #bb97b6;
+  color: black;
+  cursor: pointer;
+}
+#empty{
+    font-family: Messiri;
+    margin-top: 5%;
+    margin-left: 35%;
+}
+.contacts {
+  width: 220px;
+  height: 300px;
+  position: fixed;
+  right: 0px;
+  top: 95px;
+  border: hidden;
+  border-radius: 10px;
+  background-color: #bb9898;
+}
+.contacts h4 {
+  font-family: Messiri;
+  margin-left: 28%;
+  letter-spacing: 2px;
+}
+.contacts h5 {
+  font-family: Messiri;
+  margin-left: 10px;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.friend1 p {
+  font-size: 13px;
+  margin-left: 15px;
+  margin-top: -15px;
+  font-family: Messiri;
+}
+
+
+.psychiatrist1 p {
+  font-size: 13px;
+  margin-left: 15px;
+  margin-top: -15px;
+  width: 240px;
+  font-family: Messiri;
+}
+#show {
+  width: 98px;
+  position: fixed;
+  top: 67px;
+  left: px;
+  height: 40px;
+  border: hidden;
+  z-index: 1;
+  font-family: Messiri;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #1f0a1c;
+  color: white;
+  transition: 0.5s;
+}
+#hide {
+  width: 98px;
+  position: fixed;
+  top: 67px;
+  left: 102px;
+  height: 40px;
+  border: hidden;
+  z-index: 1;
+  font-family: Messiri;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #855e7f;
+  color: white;
+  transition: 0.5s;
+}
+#hiddenbar {
+  position: fixed;
+  top: 65px;
+  left: 0px;
+  background-color: #31112c;
+  transition: 0.5s;
+}
+#show:hover {
+  background-color: #855e7f;
+  box-shadow: 0px 1px 2px white;
+  cursor: pointer;
+}
+#hide:hover {
+  box-shadow: 0px 1px 2px white;
+  cursor: pointer;
+  background-color: #1f0a1c;
+}
+#hiddenbar img,
+#hiddenbar h2,
+#hiddenbar h1 {
+  display: none;
+}
+#hiddenbar img {
+  margin-left: 22%;
+  margin-top: 50%;
+  width: 50%;
+  border-radius: 100px;
+}
+#hiddenbar h2 {
+  margin-left: 23%;
+  margin-top: 12%;
+  color: #dbcbbd;
+  font-family: Messiri;
+}
+#hiddenbar h1 {
+  position: absolute;
+  top: 7%;
+  left: 23%;
+  color: #dbcbbd;
+  font-family: Messiri;
+  font-size: 15px;
+}
+#consultation,
+#agenda {
+  width: 150px;
+  height: 40px;
+  border: hidden;
+  border-radius: 5px;
+  margin-top: 10%;
+  margin-left: 10%;
+  background-color: #ad9d9d;
+  font-family: Messiri;
+  display: none;
+  transition: 0.5s;
+}
+#consultation {
+  padding-left: 20%;
+}
+#agenda {
+  padding-left: 3%;
+}
+#consultation:hover,
+#agenda:hover {
+  cursor: pointer;
+  box-shadow: 2px -2px #ffff;
+  background-color: #210a1e;
+  color: #fff;
+}
+#consultation_result,
+#agenda_result {
+  margin-left: 12%;
+  font-family: Messiri;
+  color: #ad9d9d;
+  display: none;
+}
+#consultation img {
+  width: 30%;
+  margin-left: -150px;
+  margin-top: 3%;
+}
+#agenda img {
+  width: 26%;
+  margin-left: -82%;
+  margin-top: 1%;
+}
+#consultation p {
+  position: absolute;
+  top: 38%;
+  left: 28%;
+}
+#agenda p {
+  position: absolute;
+  top: 45.5%;
+  left: 28%;
+}
+#my_contacts {
+  position: fixed;
+  left: 1129px;
+  top: 200px;
+  height: 30px;
+  width: 220px;
+  font-family: Messiri;
+  background-color: #492444;
+  color: white;
+  border-radius: 5px;
+  border: hidden;
+}
+footer {
+  background-color: #31112c;
+  width: 1350px;
+  height: 240px;
+  margin-top: 15%;
+  border: hidden;
+  text-align: center;
+}
+footer p {
+  font-family: Messiri;
+  color: #fff;
+  margin-top: 7%;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-left: -5%;
+}
+.upperfooter h3 {
+  display: inline;
+  margin-left: 120px;
+  font-family: Messiri;
+}
+.upperfooter h3:hover {
+  font-weight: bold;
+  color: #855e7f;
+}
+.upperfooter {
+  position: absolute;
+  top:110%;
+  left: 5%;
+}
+.upperfooter a {
+  text-decoration: none;
+  color: white;
+}
+#footlogo {
+  width: 8%;
+  margin-left: -4%;
+  margin-top: 1%;
+}

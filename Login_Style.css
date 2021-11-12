@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Messiri;
+    src: url(./Fonts/English_French/Messiri.ttf);
+}
+
+
+
+body{
+    overflow: hidden;
+    background-image: url(./Images/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.auth {
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    background-color: white;
+    border: hidden;
+    border-radius: 10px;
+}
+#title{
+    margin-top: 13%;
+    margin-left: 13%;
+    font-family: Messiri;
+    color: #6F4C5B;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+#login_form{
+    text-align: center;
+    font-family: Messiri;
+    font-size: 25px;
+}
+#login_form input{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+}
+#problem{
+    position: absolute;
+    top: 65%;
+    left: 32%;
+    font-size: 20px;
+}
+#submited {
+    position: absolute;
+    top: 85%;
+    left: 30%;
+    width: 200px;
+    height: 40px;
+    background-color: #8a6f7a;
+    font-family: Messiri;
+    border: hidden;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+
+}
+#submited a{
+    text-decoration: none;
+    color: white;
+}
+#submited:hover{
+    background-color: #3a232d;
+    cursor: pointer;
+}

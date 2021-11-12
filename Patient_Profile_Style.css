@@ -1,0 +1,333 @@
+@font-face {
+  font-family: Messiri;
+  src: url(./Fonts/English_French/Messiri.ttf);
+}
+
+body {
+  background-color: #f6f5f5;
+  /*background-image: url(images/bg.png);
+    background-size: cover;*/
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+
+#board a{
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  background-color: #31112c;
+  height: 65px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0px;
+  left: -10px;
+  border-radius: 10px;
+}
+
+#logo img {
+  border-radius: 100px;
+  width: 60px;
+  position: fixed;
+  top: 2px;
+  left: 50px;
+}
+#navbar ul {
+  list-style: none;
+  position: fixed;
+  top: -4px;
+  left: 520px;
+}
+#fixed_header {
+  position: fixed;
+}
+#logout {
+  width: 2%;
+  position: fixed;
+  left: 95%;
+}
+
+#navbar ul li {
+  display: inline;
+  padding: 80px;
+  color: white;
+  font-family: Messiri;
+  font-size: 22px;
+}
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+#navbar ul li img {
+  width: 45px;
+  height: 45px;
+}
+
+/*----------------------------------------SIDEBAR--------------------------------------*/
+
+/*-----------------------------------------SECTION-------------------------------------*/
+
+section {
+  width: 100%;
+  height: 30vh;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+/*-------------------------------------INFODOCTOR--------------------------------*/
+
+.about {
+  width: 70%;
+  height: 400px;
+  background-color: #f3e1e1;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: -7% auto 20px auto;
+  margin-top: 15%;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about img {
+  height: 220px;
+  width: 250px;
+  margin-left: -10%;
+  margin-top: -10%;
+  border-radius: 10px;
+}
+
+.about-text {
+  width: 550px;
+}
+
+.about-text .name {
+  color: #000;
+  font-size: 35px;
+  font-family: Messiri;
+  font-weight: bold;
+  line-height: 0px;
+  margin-top: 10%;
+  letter-spacing: 3px;
+}
+
+.about-text .title {
+  color: #2e2e2e;
+  font-size: 25px;
+  font-family: Messiri;
+  font-weight: bold;
+  line-height: 5px;
+  letter-spacing: 3px;
+  margin-top: 12%;
+}
+
+.about-text .description {
+  color: #000;
+  font-family: calibri;
+  font-size: 16px;
+  font-family: Messiri;
+  margin-top: 12%;
+  line-height: 40px;
+}
+
+.about-text button,
+#modify, #board {
+  width: 220px;
+  height: 50px;
+  color: #ffffff;
+  border: none;
+  font-family: Messiri;
+  background-color: #000;
+  position: absolute;
+  border-radius: 8px;
+  font-size: 16px;
+  top: 270px;
+  left: 65px;
+}
+#btn2 {
+  top: 330px;
+}
+
+/*--------------------------------------ADDITIONALINFODOCTOR------------------------------------*/
+
+.additional-info {
+  height: 600px;
+  background-color: #ffffff;
+  padding: 2% 10% 0px 10%;
+}
+
+.additional-info p {
+  font-family: calibri;
+  font-weight: bold;
+  color: #3e3d3d;
+  font-size: 25px;
+  line-height: 0px;
+}
+
+.additional-info-text {
+  width: 500px;
+  margin: 50px 0px;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+  width: 300px;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-1 {
+  background-image: url("./Images/Personal_info.png");
+}
+
+.box-2 {
+  background-image: url("./Images/Education.png");
+}
+
+.box-3 {
+  background-image: url("./Images/Hobbies.png");
+}
+
+.box-1 span,
+.box-2 span,
+.box-3 span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: calibri;
+  font-weight: bold;
+}
+
+.box-1 .box-1-title,
+.box-2 .box-2-title,
+.box-3 .box-3-title {
+  color: #ffffff;
+  font-family: calibri;
+  font-size: 23px;
+  line-height: 0px;
+}
+
+.box-1 .box-1-text,
+.box-2 .box-2-text,
+.box-3 .box-3-text {
+  font-family: calibri;
+  text-align: center;
+  color: #8f8f8f;
+}
+
+/*-------------------------------------------CONTACTDOCTOR-------------------------------------*/
+.contact-doctor {
+  width: 100%;
+  height: 280px;
+  background-image: url(./Images/blackbackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-doctor p {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: calibri;
+  font-weight: bold;
+  border-bottom: 2px solid #ffffff;
+}
+
+.contact-doctor button {
+  width: 200px;
+  height: 40px;
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+#modify {
+  top: 1200px;
+  left: 733px;
+}
+#board{
+  left: 733px;
+  top: 1270px;
+}
+/*--------------------------------------------FOOTER-----------------------------------------*/
+
+footer {
+  background-color: #31112c;
+  width: 1700px;
+  height: 250px;
+  margin-top: 5%;
+  border: hidden;
+  text-align: center;
+}
+footer p {
+  font-family: Messiri;
+  color: #fff;
+  margin-top: 4%;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-left: -3%;
+}
+.upperfooter h3 {
+  display: inline;
+  margin-left: 120px;
+  font-family: Messiri;
+}
+.upperfooter h3:hover {
+  font-weight: bold;
+  color: #855e7f;
+}
+.upperfooter {
+  position: absolute;
+  top: 196%;
+  left: 14%;
+}
+.upperfooter a {
+  text-decoration: none;
+  color: white;
+}
+#footlogo {
+  width: 8%;
+  margin-left: -4%;
+  margin-top: 1%;
+}

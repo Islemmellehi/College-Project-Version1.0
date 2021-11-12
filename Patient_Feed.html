@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Patient_Feed_Style.css">
+    <link rel="icon" href="./Images/logo_circle.png">
+    <script src="code.js"></script>
+    <title>Nafs Feed</title>
+</head>
+<body>
+    <header>
+        <div id="fixed_header">
+            <figure id="logo">
+                <p><a id="1"></a></p>
+                <img src="./Images/logo.png" alt="logo" />
+            </figure>
+            <nav id="navbar">
+              <ul>
+                <li><a href="./Patient_Feed.html"><img src="./Images/Icons/feed.png" alt=""></a></li>
+                <li><a href="./Patient_Profile.html"><img src="./Images/Icons/pr.png"></a></li>
+                <li><a href="./Articles.html"><img src="./Images/Icons/Article.png"></a></li>
+              </ul>
+            </nav>
+            <a href="./Extern_Home.html"><img src="./Images/Icons/logout_icon.png" id="logout"></a>
+    </header>
+    <main>
+        <div class="user_post">
+            <img src="./Images/Icons/profile1.png">
+            <p><a>User</a></p>
+            <textarea name="post" id="post" cols="30" rows="100" placeholder="Post Something ..."></textarea>
+            <button onclick="post()">Post</button>
+        </div>
+        <div class="post1">
+            <img src="./Images/alex_profile.jpg">
+            <p>Alex Baker</p>
+            <article>Hi everyone, I have something to confess, yesterday during my online session my psychiatrist helped me verry much, with very professional advice, I recommend it! In addition, he is not the only one who helped me a lot, I noticed that there are a lot of competent psychiatrists on the Nafs platform,You offer us a quality service, with modern and digital methods, I am extremely grateful for this very practical platform.</article>
+            <button onclick="like()">Like</button>
+            <div class="likes_counter">
+                <img src="./Images/Icons/heart.png">
+                <p id="nbr_likes">0</p>
+            </div>
+
+        </div>      
+        <div class="post2">
+            <img src="./Images/julia_profile.jpg">
+            <p>Julia Riola</p>    
+            <article>Hello, for me since I registered with this site, I found exactly what I was looking for, to be able to speak freely at home about my daily social problems, with very qualified psychiatrists, easily and without shame.<br>I feel freed from my negative thoughts and my hatred that I feel every day. thanks for everything Nafs!</article>
+            <button onclick="like2()">Like</button>
+            <div class="likes_counter2">
+                <img src="./Images/Icons/heart.png">
+                <p id="nbr_likes2">0</p>
+            </div>    
+
+        </div>
+        <div class="post3">
+            <img src="./Images/Logan_profil.jpg">
+            <p>Logan Lermen</p>    
+            <article>
+                I just wanted to thank you for helping me recover so quickly from my back injury. Your bodywork and exercises did wonders to reduce my pain, and I can now go back out like normal and do the things I love to do. Thanks once again for your fantastic work toward my recovery.If it weren’t for your early diagnosis and prompt treatment, her voice wouldn’t be what it is today. Thank you once again for all of your unflinching support and care during Nafs speech therapy online sessions. Your clients are so lucky to have you as their therapist! best online platform Nafs!
+            </article>
+            <button onclick="like3()">Like</button>
+            <div class="likes_counter3">
+                <img src="./Images/Icons/heart.png">
+                <p id="nbr_likes3">0</p>
+            </div>    
+
+        </div>
+        <div class="post4">
+            <img src="./Images/sophia_profile.jpeg" id="porfile_4">
+            <p>Sophia Grace</p>    
+            <article>
+                <article> 
+                    <div class="imgpost3"><img src="./Images/postphoto4.jpg"></div>
+                    <p id="p2">Congratulations to my psychologist Viola Marx who was certified and admitted as a Chartered Member of The Britsh Psychological Society (CPsychol) last Tuesday, well done! you fully deserve it, i'm proud of you, because you helped me so much during my online sessions.<br>I would be forever grateful, for everything you did for me it was a real implication for my life, and no one has been so involved for me, you put a smile on my face, you released me, delivered me.<br><br> And I appreciate your efforts for that, I'm so thankful, relieved, pleased, and am I'm highly satisfied, Your help will stay in my heart forever, Thanks for your attention and care, I appreciate your professional care. Good job Nafs!</p>
+                </article>            
+                <button onclick="like4()">Like</button>
+            <div class="likes_counter4">
+                <img src="./Images/Icons/heart.png">
+                <p id="nbr_likes4">0</p>
+            </div>    
+        </div>
+        <div class="contacts" id="hidden_contact">
+            <h4 id="text">My Contacts</h4>
+            <h5 id="text1">My Friends</h5>
+            <div class="friend1">
+            <img id="text2" src="./Images/alex_profile.jpg">
+            <p id="text3">Alex Baker</p>
+            </div>
+            <div class="friend2">
+            <img id="text4" src="./Images/julia_profile.jpg">
+            <p id="text5">Julia Riola</p>
+            </div>
+            <h5 id="text6">My Psychiatrists</h5>
+            <div class="psychiatrist1">
+                <img id="text" src="./Images/psychiatrist.jpg">
+                <p id="text7">Dr Martin</p>
+            </div>
+        </div>  
+        <div class="sidebar">
+            <button id="show" onclick="sidebar()">Show Profile</button>
+            <button id="hide" onclick="hidebar()">Hide Profile</button>
+
+        </div> 
+        
+        <div id="hiddenbar">
+            <h1 id="title2">Mr/Mme User</h1>
+            <img src="./Images/Icons/profile1.png" id="profile_pic">
+            <h2 id="title">User Area</h2>
+            <button id="consultation" onclick="Consultation()">
+                <img title="My consultations" src="./Images/Icons/webcam.png" id="webcam">
+                <p id="button_text">My consultations</p>
+            </button>
+            <p id="consultation_result"></p>
+            <button id="agenda" onclick="Agenda()">
+                <img title="My agenda" src="./Images/Icons/calendar.png" id="calendarr">
+                <p id="button_text2">My agenda</p>
+            </button>
+            <p id="agenda_result"></p>
+        </div>
+
+    </main>
+    <footer>
+        <div class="upperfooter">
+            <a href="./Extern_Home.html"><h3>Home</h3></a>
+            <a href="./Patient_Feed.html"><h3>Feed</h3></a>
+            <a href="./Articles.html"><h3>Articles</h3></a>
+            <a href="./Sign_In_Pat.html"><h3>Sign up</h3></a>
+            <a href="./Sign_In_Pat.html"><h3>Sign In </h3></a>
+            <a href="./Patient_Profile.html"><h3>Profile </h3></a>
+        </div>
+        <img src="./Images/logo_circle.png" id="footlogo"> 
+        <p id="copyright">@copyright goes to Nafs Team</p>
+    </footer>
+</body>
+</html>

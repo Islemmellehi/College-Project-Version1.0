@@ -1,0 +1,176 @@
+@font-face {
+    font-family: Messiri;
+    src: url(./Fonts/English_French/Messiri.ttf);
+}
+
+
+
+body{
+    overflow: hidden;
+    background-image: url(./Images/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.decor img{
+    width: 600px;
+    height: 650px;
+    border-radius: 10px;
+    margin-left: 8%;
+    margin-top: 4%;
+    filter: blur(1px);
+}
+.formulaire{
+    width: 800px;
+    height: 650px;
+    background-color: white;
+    margin-top: -40.4%;
+    margin-left: 43.5%;
+    border-radius: 10px;
+}
+.formulaire h2{
+    text-align: center;
+    font-family: Messiri;
+    color: #6B4F4F;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+.formulaire h4{
+    text-align: center;
+    font-family: Messiri;
+    color: #3c2d2d;
+    margin-top: -4%;
+}
+.formulaire form{
+    font-family: Messiri;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+.formulaire form label{
+    font-size: 20px;
+}
+.formulaire form input{
+    font-size: 17px;
+    border: #6B4F4F 1px solid;
+    border-radius: 8px;
+    height: 32px;
+}
+#input1,#input2{
+    width: 250px ;
+}
+#input3{
+    width: 50px;
+}
+#job{
+    font-family: Messiri;
+    font-size: 16px;
+    height: 35.5px;
+    width: 200px;
+    position: absolute;
+    left: 73%;
+    top: 42.5%;
+    border-radius: 10px;
+    border: #6B4F4F 1px solid;
+}
+#label10{
+    position: absolute;
+    left: 70%;
+    top: 63%;
+}
+#input10{
+    position: absolute;
+    left: 70%;
+    top: 67%;
+}
+#input10, #input9{
+    width: 250px;
+}
+#label4{
+    position: absolute;
+    left: 70%;
+    top: 43%;
+}
+#label3{
+    position: absolute;
+    left: 48.5%;
+    top: 43%;
+}
+#input3{
+    position: absolute;
+    left: 52%;
+    top: 42.5%;
+}
+#label8{
+    position: absolute;
+    left: 48%;
+    top: 64%;
+}
+#input8{
+    position: absolute;
+    left: 57%;
+    top: 63.5%;
+    width: 475px;
+}
+#label9{
+    position: absolute;
+    left: 48.5%;
+    top: 50%;
+}
+#input9{
+    position: absolute;
+    left: 48.3%;
+    top: 55%;
+}
+#label10{
+    position: absolute;
+    left: 70%;
+    top: 50%;
+}
+#input10{
+    position: absolute;
+    left: 70%;
+    top: 55%;
+}
+#label5{
+    position: absolute;
+    left: 48.3%;
+    top: 72%;
+}
+#label6, #label7{
+    position: absolute;
+    left: 52%;
+    top: 75.5%;
+}
+#label7{
+    top: 80%;
+}
+#input5,#input6{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+}
+#input6{
+    top: 79%;
+}
+#submit{
+    width: 200px;
+    height: 40px;
+    margin-left: 70%;
+    border-radius: 10px;
+    margin-top: 12%;
+    border: hidden;
+    background-color: #6B4F4F;
+    color: white;
+    font-family: Messiri;
+    font-size: 18px;
+    transition: 0.5s;
+    letter-spacing: 5px;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: #3c2d2d;
+}
+.formulaire a{
+    text-decoration: none;
+    color: white;
+
+}
