@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Sign_Up_Psy_Style.css">
     <link rel="icon" href="./Images/logo_circle.png">
+    <script src="verifPsy.js"></script>
     <title>Sign Up To Nafs</title>
 </head>
 <body>
@@ -17,35 +18,41 @@
         <div class="formulaire">
             <h2>Sign Up for free ! </h2>
             <h4>In order to sign up please fill the fields down below with the information needed</h4>
-            <form action="signup">
-                <label id="label1" for="fname">First Name : </label> <br>
-                <input id="input1"type="text" maxlength="10"> <br>
-                <label id="label2"for="lname">Last Name : </label> <br>
-                <input id="input2" type="text" maxlength="30"> <br>
-                <label id="label3" for="age">Age :</label> <br> 
-                <input id="input3" type="number"> <br>
-                <label id="label4" for="job">Job :</label> <br>
-                <Select id="job">
-                    <option value="job" disabled selected>Please select job</option>
-                    <option value="job">Psychiatrist</option>
-                    <option value="job">Student</option>
-                    <option value="job">Unemployed</option>
-                    <option value="job">Other</option>
-                </Select> <br>
+            <form action="psy.php" method="get">
+                <label id="label1" for="fname" >First Name : </label> <br>
+                <input id="input1"type="text" maxlength="10" name="FName" onchange="vérification_name()">
+                <label id="label2"for="lname" >Last Name : </label> <br>
+                <input id="input2" type="text" maxlength="30" name="LName" onchange="vérification_lastname()"> <br>
+                <label id="label4" for="uni">University :</label> <br>
+                <input type="text" id="input11" name="Uni" onchange="uni()" > 
+                <label id="label5" for="degree">Degree :</label> <br>
+                <input type="text" id="input12" name="Deg" onchange="degg()">
+                <label id="label6" for="spec">Speciality :</label> <br>
+                <input type="text" id="input13" name="Spec" onchange="spec()">
+                <label id="label7" for="grad">Year of graduation :</label> <br>
+                <input type="number" id="input14" name="Grad">
                 <label  id="label8"for="email">Email Address:</label> <br>
-                <input  id="input8"type="text"> <br>
+                <input  id="input8"type="text" name="EmailAdd"> <br>
                 <label  id="label9" for="">Password :</label> <br>
-                <input id="input9" type="password">
+                <input id="input9" type="password" name="Pass">
                 <label  id="label10" for="">Confirm Password : </label> <br>
-                <input  id="input10"type="password"><br>
-                <label id="label5" for="">Sexe :</label> <br>
-                <input id="input5" type="radio" value="f" name="gendre">
-                <label id="label6" for="f">Female</label> <br>
-                <input id="input6" type="radio" value="m" name="gendre">
-                <label id="label7" for="m">Male</label>
+                <input  id="input10"type="password" onchange="verifPassword()"><br>
+                <input type="submit" value="Submit" id="submit">
             </form>
-            <button id="submit"><a href="./Confirm_Signup.html">Submit</a></button>
         </div>
     </main>
+    <footer>
+        <div class="footertext">
+          <h2>Nafs</h2>
+          <span></span>
+          <p>
+            Your mental health matters. <br />
+            Pay attention to what your soul needs.
+          </p>
+          <img src="./Images/logo.png" alt="" />
+          <article>@copyright goes to Nafs team</article>
+        </div>
+      </footer>
+      
 </body>
 </html>

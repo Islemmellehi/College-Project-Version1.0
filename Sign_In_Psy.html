@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="Sign_In_Pat_Style.css" />
     <link rel="icon" href="./Images/logo_circle.png">
-    <script src="code.js"></script>
+    <script src="login.js"></script>
     <title>LogIn</title>
   </head>
   <body>
@@ -35,10 +35,12 @@
             ><a href="#">Having a problem ?</a></label
           >
           <br />
+          <button id="verified" onclick="veriflogin()">Verify</button>
+          <div id="submitdiv">
+            <a href="./Patient_Feed.html"><input type="button" value="Login" id="sub" disabled></a>            
+          </div>
         </form>
-        <button id="submited" type="submit" disabled="true" onkeyup="Pass()">
-          <a href="./Psy_Feed.html">Submit</a>
-        </button>
+        
 
       </div>
     </main>

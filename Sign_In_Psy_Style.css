@@ -47,9 +47,9 @@ body{
     left: 32%;
     font-size: 20px;
 }
-#submited {
+#sub,#verified {
     position: absolute;
-    top: 85%;
+    top: 75%;
     left: 30%;
     width: 200px;
     height: 40px;
@@ -62,11 +62,18 @@ body{
     transition: 0.5s;
 
 }
-#submited a{
+#sub{
+    top: 85%;
+    width: 80px;
+}
+#sub a{
     text-decoration: none;
     color: white;
 }
-#submited:hover{
+#sub:hover,#verified:hover{
     background-color: #3a232d;
     cursor: pointer;
+}
+#submitdiv input{
+    width: 200px;
 }

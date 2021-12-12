@@ -5,62 +5,85 @@
 
 
 
-body{
-    overflow: hidden;
+body {
+    overflow-x: hidden;
     background-image: url(./Images/background1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-.decor img{
+
+.decor img {
     width: 600px;
     height: 650px;
     border-radius: 10px;
     margin-left: 8%;
-    margin-top: 4%;
+    margin-top: 6%;
     filter: blur(1px);
 }
-.formulaire{
+
+.formulaire {
     width: 800px;
     height: 650px;
     background-color: white;
-    margin-top: -40.4%;
+    margin-top: -41%;
     margin-left: 43.5%;
     border-radius: 10px;
 }
-.formulaire h2{
+
+.formulaire h2 {
     text-align: center;
     font-family: Messiri;
     color: #6B4F4F;
     font-size: 35px;
     letter-spacing: 2px;
 }
-.formulaire h4{
+
+.formulaire h4 {
     text-align: center;
     font-family: Messiri;
     color: #3c2d2d;
     margin-top: -4%;
 }
-.formulaire form{
+
+.formulaire form {
     font-family: Messiri;
     margin-left: 10%;
     margin-top: 1%;
 }
-.formulaire form label{
+
+.formulaire form label {
     font-size: 20px;
 }
-.formulaire form input{
+
+.formulaire form input {
     font-size: 17px;
     border: #6B4F4F 1px solid;
     border-radius: 8px;
     height: 32px;
 }
-#input1,#input2{
-    width: 250px ;
+
+#input1,
+#input2 {
+    width: 250px;
 }
-#input3{
+
+#input2 {
+    position: absolute;
+    top: 235px;
+    left: 1150px;
+}
+
+#label2 {
+    position: absolute;
+    top: 205px;
+    left: 1150px;
+}
+
+#input3 {
     width: 50px;
 }
-#job{
+
+#job {
     font-family: Messiri;
     font-size: 16px;
     height: 35.5px;
@@ -71,92 +94,140 @@ body{
     border-radius: 10px;
     border: #6B4F4F 1px solid;
 }
-#label10{
+
+#label10 {
     position: absolute;
     left: 70%;
     top: 63%;
 }
-#input10{
+
+#input10 {
     position: absolute;
     left: 70%;
     top: 67%;
 }
-#input10, #input9{
+
+#input10,
+#input9 {
     width: 250px;
 }
-#label4{
+
+#label4 {
     position: absolute;
-    left: 70%;
-    top: 43%;
+    top: 280px;
+    left: 820px;
 }
-#label3{
+
+#input11 {
+    position: absolute;
+    top: 320px;
+    left: 815px;
+}
+
+#label3 {
     position: absolute;
     left: 48.5%;
-    top: 43%;
+    top: 45%;
 }
-#input3{
+
+#input3 {
     position: absolute;
     left: 52%;
     top: 42.5%;
 }
-#label8{
-    position: absolute;
-    left: 48%;
-    top: 64%;
-}
-#input8{
-    position: absolute;
-    left: 57%;
-    top: 63.5%;
-    width: 475px;
-}
-#label9{
+
+#label8 {
     position: absolute;
     left: 48.5%;
-    top: 50%;
+    top: 75%;
 }
-#input9{
+
+#input8 {
+    position: absolute;
+    left: 57%;
+    top: 74%;
+    width: 475px;
+}
+
+#label9 {
+    position: absolute;
+    left: 48.5%;
+    top: 60%;
+}
+
+#input9 {
     position: absolute;
     left: 48.3%;
-    top: 55%;
+    top: 65%;
 }
-#label10{
+
+#label10 {
     position: absolute;
-    left: 70%;
-    top: 50%;
+    left: 67.5%;
+    top: 60%;
 }
-#input10{
+
+#input10 {
     position: absolute;
-    left: 70%;
-    top: 55%;
+    left: 67.5%;
+    top: 65%;
 }
-#label5{
+
+#label5 {
+    position: absolute;
+    top: 280px;
+    left: 1150px;
+}
+
+#input12 {
+    position: absolute;
+    top: 320px;
+    left: 1150px;
+}
+
+#label6 {
     position: absolute;
     left: 48.3%;
-    top: 72%;
+    top: 47%;
 }
-#label6, #label7{
+
+#label7 {
+    margin-left: 45.5%;
+}
+
+#input13 {
     position: absolute;
-    left: 52%;
-    top: 75.5%;
+    left: 48.3%;
+    top: 52%;
 }
-#label7{
-    top: 80%;
+
+#input14 {
+    position: absolute;
+    left: 67.5%;
+    top: 52%;
 }
-#input5,#input6{
+
+#label7 {
+    top: 85%;
+}
+
+#input5,
+#input6 {
     position: absolute;
     left: 50%;
     top: 75%;
 }
-#input6{
+
+#input6 {
     top: 79%;
 }
-#submit{
+
+#submit {
     width: 200px;
     height: 40px;
-    margin-left: 70%;
+    margin-left: 65%;
     border-radius: 10px;
-    margin-top: 12%;
+    margin-top: 20%;
     border: hidden;
     background-color: #6B4F4F;
     color: white;
@@ -165,12 +236,68 @@ body{
     transition: 0.5s;
     letter-spacing: 5px;
 }
-#submit:hover{
+
+#submit:hover {
     cursor: pointer;
     background-color: #3c2d2d;
 }
-.formulaire a{
+
+.formulaire a {
     text-decoration: none;
     color: white;
 
+}
+
+footer {
+    background-color: #d5bfbf;
+    height: 180px;
+    width: 2000px;
+    position: absolute;
+    top: 800px;
+    left: 0px;
+}
+
+.footertext h2 {
+    width: 8%;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    font-family: Hina;
+    letter-spacing: 8px;
+}
+
+.footertext p {
+    position: absolute;
+    top: 70px;
+    left: 58px;
+    font-family: raleway;
+    font-size: 15px;
+}
+
+.footertext span {
+    height: 1px;
+    width: 100px;
+    background-color: #5e454b;
+    position: absolute;
+    top: 70px;
+    left: 58px;
+}
+
+.footertext article {
+    position: absolute;
+    top: 155px;
+    left: 750px;
+    font-family: Roboto;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.footertext img {
+    width: 8%;
+    border: hidden;
+    position: absolute;
+    top: 7px;
+    border-radius: 8px;
+    left: 1400px;
 }

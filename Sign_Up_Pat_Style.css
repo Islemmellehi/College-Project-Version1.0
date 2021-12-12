@@ -96,39 +96,44 @@ body{
 }
 #input3{
     position: absolute;
-    left: 52%;
-    top: 42.5%;
+    left: 48%;
+    top: 48.5%;
+}
+#input4{
+    position: absolute;
+    left: 70%;
+    top: 48.5%;
 }
 #label8{
     position: absolute;
     left: 48%;
-    top: 64%;
+    top: 70%;
 }
 #input8{
     position: absolute;
     left: 57%;
-    top: 63.5%;
+    top: 69.5%;
     width: 475px;
 }
 #label9{
     position: absolute;
     left: 48.5%;
-    top: 50%;
+    top: 55%;
 }
 #input9{
     position: absolute;
     left: 48.3%;
-    top: 55%;
+    top: 60%;
 }
 #label10{
     position: absolute;
     left: 70%;
-    top: 50%;
+    top: 55%;
 }
 #input10{
     position: absolute;
     left: 70%;
-    top: 55%;
+    top: 60%;
 }
 #label5{
     position: absolute;

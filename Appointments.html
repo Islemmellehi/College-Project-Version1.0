@@ -33,23 +33,20 @@
 
                     <div id="searchdim">
 
-                        <div id="searchbar">
-                        <input class="searchstyle" type="text" placeholder="Search for a doctor by name ...">
-                        <input class="searchstyle" type="text" placeholder="Your location ...">
-                        <input class="searchstyle"  type="text" placeholder="Speciality...">
-                        </div>
+                        <form action="search.php" method="get">
+                            <input class="searchstyle" type="text" placeholder="Search for a doctor by name ..." name="searchname">
+                            <input type="submit" value="Search" id="searchput" >
+                        </form>
 
 
-                        <div id="searchpicdiv">
-                            <a href=""><img id="searchimg" src="./Images/search.png" ></a>
-                        </div>
+                        
 
                     </div>
 
 
                     <div id="userpic">
                         <img id="profilepic" src="./Images/medical-record.png" alt="">
-                        <a id="profileinfo" href=""> Profile informations </a>
+                        <a id="profileinfo" href="./Patient_Profile.html"> Profile informations </a>
                     </div>
                 
                 <hr  width="69%">
@@ -125,19 +122,19 @@
 
                             <div id="prvdate">
                             <b >Previous date : </b>
-                            <input id="prvdateinput" type="date">
+                            <input id="prvdateinput" type="date" name="pdate">
                             </div> 
 
 
                             <div id="newdate">
                             <b>New date :</b>
-                            <input  id="newdateinput" type="date">
+                            <input  id="newdateinput" type="date" name="ndate">
                             </div>
 
 
                             <div id="comment">
                                 <textarea  placeholder="Notes to your doctor ..."></textarea> <br>
-                                <input id="submit"  type="submit" value="Send">
+                                <input id="submit"  type="submit" value="Send" name="notes">
                             </div>  
 
                         </div> 
